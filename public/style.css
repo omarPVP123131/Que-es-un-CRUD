@@ -1,0 +1,98 @@
+/* Estilos para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+
+/* Estilos para el contenedor de agregar nuevas tareas */
+div {
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    padding: 8px;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+.boton1 {
+    padding: 8px;
+    display: block;
+    margin: 0 auto 5px;
+    font-size: 16px;
+    /* Agrega otros estilos específicos que desees */
+}
+
+button {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la lista de tareas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la explicación del CRUD y componentes */
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+div > p {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 6px solid #4CAF50;
+}
+
+div > h2 {
+    margin-bottom: 5px;
+    color: #4CAF50;
+}
+
+/* Estilos para el contenido del Server, Script y Database */
+div > div {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Estilos para la explicación del Server */
+div > div:nth-child(3) {
+    border-left-color: #2196F3;
+}
+
+/* Estilos para la explicación del Script */
+div > div:nth-child(4) {
+    border-left-color: #FF9800;
+}
+
+/* Estilos para la explicación de la Database */
+div > div:nth-child(5) {
+    border-left-color: #E91E63;
+}

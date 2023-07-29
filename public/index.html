@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Título de la página -->
+    <h1>CRUD</h1>
+
+    <!-- Contenedor para agregar nuevas tareas -->
+    <div>
+        <!-- Campo de entrada para ingresar nuevas tareas -->
+        <input type="text" id="taskInput" placeholder="Nueva tarea">
+        <!-- Botón para agregar una nueva tarea -->
+        <button onclick="addTask()" class="boton1" >Agregar</button>
+    </div>
+
+    <!-- Lista de tareas -->
+    <ul id="taskList"></ul>
+
+    <!-- Script para interactuar con las tareas -->
+    <script src="script.js"></script>
+
+    <!-- Explicación del CRUD -->
+    <div>
+        <h2>¿Qué es un CRUD?</h2>
+        <p>
+            CRUD es un acrónimo que representa las cuatro operaciones básicas que se pueden realizar en una aplicación que maneja datos:
+        </p>
+        <ul>
+            <li><b>Crear (Create):</b> Permite agregar nuevos datos a la base de datos o sistema de almacenamiento.</li>
+            <li><b>Leer (Read):</b> Permite obtener datos existentes de la base de datos o sistema de almacenamiento.</li>
+            <li><b>Actualizar (Update):</b> Permite modificar los datos existentes en la base de datos o sistema de almacenamiento.</li>
+            <li><b>Eliminar (Delete):</b> Permite eliminar datos de la base de datos o sistema de almacenamiento.</li>
+        </ul>
+
+        <h2>¿Cómo funciona este CRUD?</h2>
+        <ol>
+            <li>
+                <b>Agregar una tarea:</b> En el campo de entrada de texto, ingresa el texto de una nueva tarea y haz clic en el botón "Agregar". La función `addTask()` se encarga de enviar una solicitud POST al servidor para agregar la nueva tarea. Luego, la función `renderTask()` muestra la tarea agregada en la lista.
+            </li>
+            <li>
+                <b>Editar una tarea:</b> Para editar una tarea existente, haz clic en el botón "Editar" de la tarea que deseas modificar. Se te pedirá un nuevo texto para la tarea. Si proporcionas un nuevo texto y confirmas la edición, la función `editTask()` enviará una solicitud PUT al servidor para actualizar la tarea. Luego, se recargará la lista de tareas para mostrar la tarea actualizada.
+            </li>
+            <li>
+                <b>Eliminar una tarea:</b> Para eliminar una tarea, haz clic en el botón "Eliminar" de la tarea que deseas eliminar. La función `deleteTask()` enviará una solicitud DELETE al servidor para eliminar la tarea. Luego, se eliminará la tarea de la lista.
+            </li>
+        </ol>
+    </div>
+
+    <!-- Explicación del Server -->
+    <div>
+        <h2>Explicación del Server (server.js)</h2>
+        <p>
+            El archivo <code>server.js</code> es el componente del lado del servidor que maneja las solicitudes y respuestas HTTP relacionadas con las operaciones CRUD de tareas. Utiliza el framework web Express.js para simplificar el manejo de rutas y middlewares.
+            <!-- Aquí puedes agregar más detalles sobre el server.js si es necesario -->
+        </p>
+    </div>
+
+    <!-- Explicación del Script -->
+    <div>
+        <h2>Explicación del Script (script.js)</h2>
+        <p>
+            El archivo <code>script.js</code> es el componente del lado del cliente que se ejecuta en el navegador web. Es responsable de manejar la interacción del usuario con la interfaz de la página web y realizar las solicitudes HTTP al servidor para realizar las operaciones CRUD de tareas.
+            <!-- Aquí puedes agregar más detalles sobre el script.js si es necesario -->
+        </p>
+    </div>
+
+    <!-- Explicación de la Database -->
+    <div>
+        <h2>Explicación de la Database (database.js)</h2>
+        <p>
+            El archivo <code>database.js</code> es el componente que se encarga de la conexión y las operaciones con la base de datos SQLite3. Se utiliza para almacenar y recuperar las tareas en el servidor.
+            <!-- Aquí puedes agregar más detalles sobre el database.js si es necesario -->
+        </p>
+    </div>
+</body>
+</html>
